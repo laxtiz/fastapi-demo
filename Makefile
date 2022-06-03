@@ -23,3 +23,9 @@ clean:
 	find . -type d -name "__pycache__" -delete
 	rm -rf .pytest_cache/
 	rm -rf dist/
+
+deploy: requirements.txt
+	deta deploy
+
+requirements.txt: poetry.lock
+	poetry export --without-hashes -f requirements.txt > requirements.txt
