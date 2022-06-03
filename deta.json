@@ -1,0 +1,5 @@
+{
+    "name": "fastapi-demo",
+    "description": "A demo of fastapi",
+    "runtime": "python3.8"
+}
